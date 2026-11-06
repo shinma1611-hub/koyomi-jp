@@ -1,0 +1,25 @@
+{
+  "name": "koyomi-jp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dependency-free Japanese calendar calculations (rokuyo, national holidays, 24 solar terms, eto, ichiryu-manbai-bi, tensha-nichi) for 2022-2032.",
+  "license": "MIT",
+  "author": "temoto-dougu",
+  "main": "koyomi.js",
+  "types": "koyomi.d.ts",
+  "exports": {
+    ".": {
+      "types": "./koyomi.d.ts",
+      "import": "./koyomi.mjs",
+      "require": "./koyomi.js"
+    }
+  },
+  "files": ["koyomi.js", "koyomi.mjs", "koyomi.d.ts"],
+  "scripts": {
+    "test": "node --test test/koyomi.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["japan", "calendar", "rokuyo", "holiday", "koyomi", "sekki", "eto"]
+}
